@@ -1,14 +1,16 @@
 from flask import Flask
 from flask import escape
 
-myapp_obj = Flask(__name__)
+myobj = Flask(__name__)
+name = "Lisa"
+city_names = ["Paris", "London", "Rome", "Tahiti"]
+
 
 #view function
-@myapp_obj.route("/")
-@myapp_obj.route("/index.html")
+@myobj.route("/")
+@myobj.route("/index.html")
 def home():
-    name = "Lisa"
-    city_names = ["Paris", "London", "Rome", "Tahiti"]
+
     return '''
     <html>
     <h1>Welcome ''' + name + '''!</h1>
@@ -27,4 +29,4 @@ def home():
     </html>
     '''
 
-myapp_obj.run()
+#myapp_obj.run()
