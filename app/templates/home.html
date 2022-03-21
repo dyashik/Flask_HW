@@ -1,0 +1,14 @@
+{% block content %}
+    <html>
+    <h1>Welcome, {{ name }}!</h1>
+    
+    <ahref="www.google.com">not google</a>
+    
+    <ul>
+    {% for city in city_names %}
+        <li>{{ city }}</li>
+    {% endfor %}
+    </ul>
+    
+    </html>
+{% endblock %}
