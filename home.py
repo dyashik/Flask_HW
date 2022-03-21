@@ -27,23 +27,4 @@ def home():
     </html>
     '''
 
-@myapp_obj.route("/hello")
-def hello():
-    user = {'username': 'Miguel'}
-    return '''
-    <html>
-    <head>
-        <title>Home Page - my blog</title> </head>
-    <body>
-        <h1>Hello, ''' + user['username'] + '''!</h1>
-    </body>
-    </html>'''
-
-@myapp_obj.route("/login")
-def login():
-    return "Login Page!"
-
-@myapp_obj.route("/members/<string:name>/")
-def getMember(name):
-    return escape(name)
 myapp_obj.run()
