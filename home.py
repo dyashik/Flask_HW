@@ -15,7 +15,7 @@ def home():
     <html>
     <h1>Welcome, ''' + name + '''!</h1>
     
-    <a href="www.google.com">not google</a>
+    <ahref="www.google.com">not google</a>
     
     <ul>
     
