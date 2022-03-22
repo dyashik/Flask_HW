@@ -1,8 +1,24 @@
 {% block content %}
     <html>
+    <!-- {% if val %}
+    <ul>
+        <li>{{ list }}</li>
+    </ul>
+    {% endif %} -->
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <ul>
+                <li>{{ message }}</li>
+            </ul>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
     <h1>Welcome, {{ name }}!</h1>
     
-    <ahref="www.google.com">not google</a>
+    <a href="www.google.com">not google</a>
     
     <ul>
     {% for city in city_names %}
@@ -10,5 +26,12 @@
     {% endfor %}
     </ul>
     
+        <h2>Button Pressed: {{ val }} </h2>
+        <label for="cityName">City Name</label>
+        </br>
+    <form action="/newCity" method = "POST">
+        <input type = "text" name = "box" />
+        <input type = "submit" value = "Submit" />
+    </form>
     </html>
 {% endblock %}

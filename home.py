@@ -10,7 +10,20 @@ city_names = ["Paris", "London", "Rome", "Tahiti"]
 @myobj.route("/")
 @myobj.route("/index.html")
 def home():
+    return '''
+        <html>
+        <h1>Welcome, ''' +  name  + '''!</h1>
+        
+        <ahref="www.google.com">not google</a>
+        
+        <ul>
+        <li>''' + city_names[0] + '''</li>
+        <li>''' + city_names[1] + '''</li>
+        <li>''' + city_names[2] + '''</li>
+        <li>''' + city_names[3] + '''</li>
+        </ul>
+        
+        </html>
+        '''
 
-    return render_template("home.html", name = name, city_names = city_names)
-
-#myapp_obj.run()
+myobj.run()
