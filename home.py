@@ -12,7 +12,7 @@ city_names = ["Paris", "London", "Rome", "Tahiti"]
 def home():
     return '''
         <html>
-        <h1>Welcome, ''' +  name  + '''!</h1>
+        <h1>Welcome ''' +  name  + '''!</h1>
         
         <ahref="www.google.com">not google</a>
         
