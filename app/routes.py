@@ -16,7 +16,7 @@ def home():
 # def new_page():
 #     return render_template("home.html", name = name, city_names = city_names, list = ["dad"])
 
-@myobj.route("/getCity", methods = ["POST", "GET"])
+@myobj.route("/", methods = ["POST", "GET"])
 def someMethod():
     if request.method == "POST":
         var = request.form['box']
