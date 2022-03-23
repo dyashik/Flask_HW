@@ -26,4 +26,4 @@ def home():
         </html>
         '''
 
-myobj.run()
+#myobj.run()

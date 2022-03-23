@@ -23,4 +23,3 @@ def someMethod():
         flash(var)
         return render_template("home.html", name = name, city_names = city_names, list = var, val = True)
 
-#myobj.run()

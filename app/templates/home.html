@@ -29,8 +29,11 @@
         <h2>Button Pressed: {{ val }} </h2>
         <label for="cityName">City Name</label>
         </br>
+        
     <form action="/newCity" method = "POST">
-        <input type = "text" name = "box" />
+        <input type = "text" maxlength="32" name = "box" />
+        </br>
+        </br>
         <input type = "submit" value = "Submit" />
     </form>
     </html>
